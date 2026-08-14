@@ -58,4 +58,10 @@ public class StudentController {
 		List<Student> byName = studentServiceI.getStudentsByName(sname);
 		return byName;
 	}
+	
+	@GetMapping("/msg")
+	public String m1() {
+		
+		return "Hello";
+	}
 }
